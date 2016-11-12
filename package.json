@@ -11,7 +11,7 @@
     "bannerman": "./index.js"
   },
   "repository": {
-    "url": "https://github.com/mightyCrow/bannerman.git",
+    "url": "https://github.com/tiaanduplessis/bannerman.git",
     "type": "git"
   },
   "reveal": true,

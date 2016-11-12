@@ -42,4 +42,4 @@ It can easily be used as a `npm` script:
 All Contributions are welcome! Please open up an issue if you would like to help out. :smile:
 
 ## License
-Created with ♥ by [Tiaan du Plessis](https://github.com/mightyCrow). Licensed under the [MIT License](https://tiaan.mit-license.org/).
+Created with ♥ by [Tiaan du Plessis](https://github.com/tiaanduplessis). Licensed under the [MIT License](https://tiaan.mit-license.org/).
