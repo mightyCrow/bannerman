@@ -1,4 +1,5 @@
-# bannerman
+# bannerman [![npm](https://img.shields.io/npm/v/bannerman.svg?style=flat-square)]()
+[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 A modest cli tool to add banner to file based on info from the `package.json`.
 
