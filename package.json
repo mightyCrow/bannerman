@@ -1,0 +1,34 @@
+{
+  "name": "bannerman",
+  "version": "1.0.0",
+  "description": "Add banner info to file(s) based on your package.json",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "lint": "standard --fix"
+  },
+  "bin": {
+    "bannerman": "./index.js"
+  },
+  "repository": {
+    "url": "https://github.com/mightyCrow/bannerman.git",
+    "type": "git"
+  },
+  "reveal": true,
+  "keywords": [
+    "banner",
+    "file"
+  ],
+  "files": [
+    "index.js",
+    "yarn.lock"
+  ],
+  "author": "Tiaan du Plessis",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^8.5.0"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
