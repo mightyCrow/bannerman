@@ -1,11 +1,12 @@
 {
   "name": "bannerman",
   "version": "1.0.0",
-  "description": "Add banner info to file(s) based on your package.json",
+  "description": "Quick and dirty CLI util to add banner info to file(s) based on your package.json",
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "lint": "standard --fix"
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "bin": {
     "bannerman": "./index.js"
@@ -26,9 +27,10 @@
   "author": "Tiaan du Plessis",
   "license": "MIT",
   "devDependencies": {
-    "standard": "^8.5.0"
+    "standard": "^10.0.2"
   },
   "dependencies": {
-    "minimist": "^1.2.0"
+    "get-them-args": "^1.2.2",
+    "read-pkg-up": "^2.0.0"
   }
 }

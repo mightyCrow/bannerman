@@ -1,18 +1,13 @@
 #! /usr/bin/env node
 'use strict'
 
-const path = require('path')
 const fs = require('fs')
-const argv = require('minimist')(process.argv.slice(2))
-const pkg = require(path.join(process.cwd(), 'package.json'))
+const args = require('get-them-args')(process.argv.slice(2))
+const readPkgUp = require('read-pkg-up')
 
-/**
- * Generate banner string based on provided arguments and package.json
- */
-const generateBanner = (argv, pkg) => {
+const generateBanner = (args, pkg) => {
   let lines = ['/**', ' *']
-  for (let key in argv) {
-    // Check if arg exists in package.json
+  for (let key in args) {
     if (key !== '_' && pkg[key]) {
       lines.push(` * @${key} ${pkg[key]}`)
     }
@@ -21,25 +16,29 @@ const generateBanner = (argv, pkg) => {
   return lines.join('\n')
 }
 
-/**
- * Write content & banner to file
- */
-const output = (file, argv, content) => {
-  const output = generateBanner(argv, pkg) + content
-  fs.writeFile(file, output, (err) => { if (err) { throw err } })
+const output = (file, args, content, pkg) => {
+  const output = generateBanner(args, pkg) + content
+  fs.writeFile(file, output, (err) => {
+    if (err) { throw err }
+  })
 }
 
-/**
- * Read argument file(s)
- */
-if (argv) {
-  argv._.forEach((file) => {
-    const stream = fs.createReadStream(file)
-    let body = ''
-    stream.on('data', data => { body += data })
-    stream.on('error', err => { throw err })
-    stream.on('end', () => output(file, argv, body))
-  })
-} else {
-  console.error('Please provide name for file(s) to add banner to.')
-}
+readPkgUp({
+  cwd: process.cwd()
+}).then(({pkg}) => {
+  if (args) {
+    args.unknown.forEach((file) => {
+      const stream = fs.createReadStream(file)
+      let body = ''
+      stream.on('data', data => {
+        body += data
+      })
+      stream.on('error', err => {
+        throw err
+      })
+      stream.on('end', () => output(file, args, body, pkg))
+    })
+  } else {
+    console.error('Please provide name for file(s) to add banner to.')
+  }
+}).catch(console.error)
