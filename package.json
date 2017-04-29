@@ -1,6 +1,6 @@
 {
   "name": "bannerman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quick and dirty CLI util to add banner info to file(s) based on your package.json",
   "main": "index.js",
   "scripts": {
