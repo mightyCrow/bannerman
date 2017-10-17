@@ -64,6 +64,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/bannerman.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install --global bannerman
 # OR
