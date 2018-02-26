@@ -27,7 +27,7 @@
   "author": "Tiaan du Plessis",
   "license": "MIT",
   "devDependencies": {
-    "standard": "^10.0.2"
+    "standard": "^11.0.0"
   },
   "dependencies": {
     "get-them-args": "^1.2.2",
