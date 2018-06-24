@@ -1,21 +1,19 @@
 {
   "name": "bannerman",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Quick and dirty CLI util to add banner info to file(s) based on your package.json",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node .",
-    "lint": "standard",
-    "lint:fix": "standard --fix"
+    "lint": "standard --fix",
+    "test": "jest"
   },
   "bin": {
-    "bannerman": "./index.js"
+    "bannerman": "src/cli.js"
   },
   "repository": {
     "url": "https://github.com/tiaanduplessis/bannerman.git",
     "type": "git"
   },
-  "reveal": true,
   "keywords": [
     "banner",
     "file"
@@ -27,10 +25,16 @@
   "author": "Tiaan du Plessis",
   "license": "MIT",
   "devDependencies": {
-    "standard": "^11.0.0"
+    "jest": "^23.1.0",
+    "standard": "^11.0.1"
   },
   "dependencies": {
-    "get-them-args": "^1.2.2",
+    "get-them-args": "^1.3.1",
     "read-pkg-up": "^4.0.0"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
   }
 }

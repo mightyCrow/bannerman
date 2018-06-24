@@ -1,75 +1,28 @@
-<h1 align="center">bannerman</h1>
-<div align="center">
-  <strong>Quick and dirty CLI util to add banner info to file(s) based on your <code>package.json</code></strong>
-</div>
-<br>
-<div align="center">
-  <a href="https://npmjs.org/package/bannerman">
-    <img src="https://img.shields.io/npm/v/bannerman.svg?style=flat-square" alt="Package version" />
-  </a>
-  <a href="https://npmjs.org/package/bannerman">
-  <img src="https://img.shields.io/npm/dm/bannerman.svg?style=flat-square" alt="Downloads" />
-  </a>
-  <a href="https://github.com/feross/standard">
-    <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square" alt="Standard" />
-  </a>
-  <a href="https://travis-ci.org/tiaanduplessis/bannerman">
-    <img src="https://img.shields.io/travis/tiaanduplessis/bannerman.svg?style=flat-square" alt="Travis Build" />
-  </a>
-  <a href="https://github.com/RichardLitt/standard-readme)">
-    <img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square" alt="Standard Readme" />
-  </a>
-  <a href="https://badge.fury.io/gh/tiaanduplessis%2Fbannerman">
-    <img src="https://badge.fury.io/gh/tiaanduplessis%2Fbannerman.svg?style=flat-square" alt="GitHub version" />
-  </a>
-  <a href="https://dependencyci.com/github/tiaanduplessis/bannerman">
-    <img src="https://dependencyci.com/github/tiaanduplessis/bannerman/badge?style=flat-square" alt="Dependency CI" />
-  </a>
-  <a href="https://github.com/tiaanduplessis/bannerman/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/bannerman.svg?style=flat-square" alt="License" />
-  </a>
-  <a href="http://makeapullrequest.com">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs" />
-  </a>
-  <a href="https://www.paypal.me/tiaanduplessis/1">
-    <img src="https://img.shields.io/badge/$-support-green.svg?style=flat-square" alt="Donate" />
-  </a>
-</div>
-<br>
-<div align="center">
-  <a href="https://github.com/tiaanduplessis/bannerman/watchers">
-    <img src="https://img.shields.io/github/watchers/tiaanduplessis/bannerman.svg?style=social" alt="Github Watch Badge" />
-  </a>
-  <a href="https://github.com/tiaanduplessis/bannerman/stargazers">
-    <img src="https://img.shields.io/github/stars/tiaanduplessis/bannerman.svg?style=social" alt="Github Star Badge" />
-  </a>
-  <a href="https://twitter.com/intent/tweet?text=Check%20out%20bannerman!%20https://github.com/tiaanduplessis/bannerman%20%F0%9F%91%8D">
-    <img src="https://img.shields.io/twitter/url/https/github.com/tiaanduplessis/bannerman.svg?style=social" alt="Tweet" />
-  </a>
-</div>
-<br>
-<div align="center">
-  Built with ❤︎ by <a href="tiaan.beer">Tiaan</a> and <a href="https://github.com/tiaanduplessis/bannerman/graphs/contributors">contributors</a>
-</div>
 
-<h2>Table of Contents</h2>
-<details>
-  <summary>Table of Contents</summary>
-  <li><a href="#install">Install</a></li>
-  <li><a href="#usage">Usage</a></li>
-  <li><a href="#contribute">Contribute</a></li>
-  <li><a href="#license">License</a></li>
-</details>
+# bannerman
+[![package version](https://img.shields.io/npm/v/bannerman.svg?style=flat-square)](https://npmjs.org/package/bannerman)
+[![package downloads](https://img.shields.io/npm/dm/bannerman.svg?style=flat-square)](https://npmjs.org/package/bannerman)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![package license](https://img.shields.io/npm/l/bannerman.svg?style=flat-square)](https://npmjs.org/package/bannerman)
+[![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/bannerman.svg)](https://greenkeeper.io/)
 
+> Quick and dirty CLI util to add banner info to file(s) based on your package.json
+
+## Table of Contents
+
+- [Install](#install)
+- [Usage](#usage)
+- [Contribute](#contribute)
+- [License](#License)
 
 ## Install
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/bannerman.svg)](https://greenkeeper.io/)
+This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
 
 ```sh
-$ npm install --global bannerman
-# OR
-$ yarn global add bannerman
+$ npm install bannerman
+$ # OR
+$ yarn add bannerman
 ```
 
 ## Usage
@@ -101,8 +54,15 @@ It can easily be used as a `npm` script:
 
 **Note:** - There is no support for nested properties in the `package.json`
 
-## Contributing
-All Contributions are welcome! Please open up an issue if you would like to help out. :smile:
+
+## Contribute
+
+1. Fork it and create your feature branch: git checkout -b my-new-feature
+2. Commit your changes: git commit -am 'Add some feature'
+3. Push to the branch: git push origin my-new-feature 
+4. Submit a pull request
 
 ## License
-Created with ♥ by [Tiaan du Plessis](https://github.com/tiaanduplessis). Licensed under the [MIT License](https://tiaan.mit-license.org/).
+
+MIT
+    
